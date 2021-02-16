@@ -1,0 +1,24 @@
+{
+  "name": "ikumi.shimoda",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".hyper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikumi-shimoda/docker-laravel-handson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikumi-shimoda/docker-laravel-handson/issues"
+  },
+  "homepage": "https://github.com/ikumi-shimoda/docker-laravel-handson#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.1.0"
+  }
+}
