@@ -2,11 +2,12 @@
 
 $maxWidth: 1000px;
 $brandColor: #cd6799;
+$baseColor: #fff;
 
 @mixin btn($color) {
   display: block;
   padding: 20px 30px;
-  color: #fff;
+  color: $baseColor;
   border-radius: 6px;
   cursor: pointer;
   background-color: $color;
@@ -16,22 +17,9 @@ $brandColor: #cd6799;
   }
 }
 
-//q2 q3
-// @mixin btn() {
-//   display: block;
-//   padding: 20px 30px;
-//   color: #fff;
-//   border-radius: 6px;
-//   cursor: pointer;
-//   text: {
-//     decoration: none;
-//     align: center;
-//   }
-// }
-
 // q2
-// $sns-name: 'facebook', 'google', 'twitter', 'pinterest', 'behance', 'dribbble';
-// $sns-color: #4668b3,#de5745, #2fbbed, #d94348, #3079ff, #eb6397;
+$sns-name: 'facebook', 'google', 'twitter', 'pinterest', 'behance', 'dribbble';
+$sns-color: #4668b3,#de5745, #2fbbed, #d94348, #3079ff, #eb6397;
 
 //q3
 // $map: (

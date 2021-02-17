@@ -61,8 +61,7 @@
 
 .parent {
   padding: 70px 0;
-  background-color: #fff;
-
+  background-color: $baseColor;
   &__ttl {
     color: #333;
     text-align: center;
@@ -87,41 +86,38 @@
 .footer {
   padding: 70px 0;
   &__sns {
-
     &__btn {
-      &.is-facebook {
-        @include btn(#4668b3);
-      }
-      &.is-google {
-        @include btn(#de5745);
-      }
-      &.is-twitter {
-        @include btn(#2fbbed);
-      }
-      &.is-pinterest {
-        @include btn(#d94348);
-      }
-      &.is-behance {
-        @include btn(#3079ff);
-      }
-      &.is-dribbble {
-        @include btn(#eb6397);
-      }
+      // &.is-facebook {
+      //   @include btn(#4668b3);
+      // }
+      // &.is-google {
+      //   @include btn(#de5745);
+      // }
+      // &.is-twitter {
+      //   @include btn(#2fbbed);
+      // }
+      // &.is-pinterest {
+      //   @include btn(#d94348);
+      // }
+      // &.is-behance {
+      //   @include btn(#3079ff);
+      // }
+      // &.is-dribbble {
+      //   @include btn(#eb6397);
+      // }
 
       // q2
-      // @each $name in $sns-name {
-      //   $index_key: index($sns-name, $name);
-      //   &.is-#{$name} {
-      //     @include btn();
-      //     background-color: nth($sns-color, $index_key);
-      //   }
-      // }
+      @each $name in $sns-name {
+        $index_key: index($sns-name, $name);
+        &.is-#{$name} {
+          @include btn(nth($sns-color, $index_key));
+        }
+      }
 
     // q3
       // @each $class, $color in $map {
       //   &.is-#{$class} {
-      //     @include btn();
-      //     background-color: map-get($map, $class);
+      //     @include btn($color);
       //   }
       // }
 
